@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pokedex</h1>
+    <div class="card fade" id="pokemonCard" style="display: none;">
+        <h2 id="pkmnName"></h2>
+        <p id="pkmnId"></p>
+        <img id="pkmnImage" alt="pkmn_Sprite">
+        <div id="pkmnTypes"></div>
+        <p id="pkmnHeight"></p>
+        <p id="pkmnWeight"></p>
+        <p>Ability: <span id="pkmnAbility"></span></p>
+        <div id="ctnButtons" class="ctnButtons">
+            <button id="btnPrevious">←</button>
+            <button id="btnNext">→</button>
+        </div>
+        <button id="toggleShiny">Toggle Shiny</button>
+        <button id="showEvolutionBtn">Show Evolutions</button>
+        <div class="pkmnCryAudio">
+            <audio id="pkmnCry" controls></audio>
+        </div>
+        <button id="playCryButton">Play Cry</button>
+    </div>
+    <div id="evolutionCtn">
+    </div>
+    <div id="backEvoDiv" class="backDiv">
+        <button id="backEvoBtn" class="backBtn">Back to Pokemon</button>
+    </div>
+    <div id="searchCtn">
+        <input type="text" id="searchInput" placeholder="Escribe un PKMN">
+        <button id="searchButton">Buscar!</button>
+        <div id="suggestions"></div>
+    </div>
+    <script type="module" src="./dist/main.js"></script>
+</body>
+
+</html>
