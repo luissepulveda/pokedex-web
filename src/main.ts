@@ -248,6 +248,7 @@ playCryButton.onclick = async () => {
 
 
 showEvolutionBtn.addEventListener("click", () => {
+    evoCtn.innerHTML = ""
     card.style.display = "none";
     searchCtn.style.display = "none";
     backEvoBtn.style.display = "block"
